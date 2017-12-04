@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=Edge,chrome=1.0">
+</head>
+<body>
+    <header>
+    	<a href="#">公司</a>
+    	<span><i class="icon iconfont">&#xe729;</i></span>
+    </header>
+    <section>
+    	<div class="nav">
+    		<a href="#">融资<i class="icon iconfont">&#xe6d1;</i></a>
+    		<a href="#">规模<i class="icon iconfont">&#xe6d1;</i></a>
+    		<a href="#">行业<i class="icon iconfont">&#xe6d1;</i></a>
+    	</div>
+    	<div class="content">
+    		<dl>
+    			<dt><img src="images/1.png"></dt>
+    			<dd>
+    				<h1>百度</h1>
+    				<span>北京市海淀区西北旺</span>
+    				<p>互联网 | 已上市 | 10000人以上</p>
+    				<b>热招: <label for="">前端工程师</label>等2382个职位</b>
+    			</dd>
+            </dl>
+            <dl>
+    			<dt><img src="images/1.png"></dt>
+    			<dd>
+    				<h1>百度</h1>
+    				<span>北京市海淀区西北旺</span>
+    				<p>互联网 | 已上市 | 10000人以上</p>
+    				<b>热招: <label for="">前端工程师</label>等2382个职位</b>
+    			</dd>
+            </dl>
+            <dl>
+    			<dt><img src="images/1.png"></dt>
+    			<dd>
+    				<h1>百度</h1>
+    				<span>北京市海淀区西北旺</span>
+    				<p>互联网 | 已上市 | 10000人以上</p>
+    				<b>热招: <label for="">前端工程师</label>等2382个职位</b>
+    			</dd>
+            </dl>
+            <dl>
+    			<dt><img src="images/1.png"></dt>
+    			<dd>
+    				<h1>百度</h1>
+    				<span>北京市海淀区西北旺</span>
+    				<p>互联网 | 已上市 | 10000人以上</p>
+    				<b>热招: <label for="">前端工程师</label>等2382个职位</b>
+    			</dd>
+    		</dl>
+    	</div>
+    </section>
+      <script src="github.js"></script>  
+    <script>
+        var xml = null;
+        if (window.XMLHttpRequest){
+            xml = new XMLHttpRequest();
+        } else {
+            xml = new ActiveXObject('Microsoft.XMLHTTP');
+        }
+        xml.onreadystatechange = function () {
+            if (xml.readyState === 4) {
+                if (xml.status === 200) {
+                    var data = JSON.parse(responseText);
+                    console.log(data);
+                }
+            }
+        }
+        xml.open('get', 'data/data.json', true);
+        xml.send();
+    </script>
+</body>
+</html>
